@@ -1,57 +1,74 @@
-# 🧪 TestCase Studio
+#  TestCase Studio
 
-A Streamlit-based AI tool that automatically generates clean, structured software test cases from requirement documents using **Groq LLM**.
-
----
-<p align="center"> <img src="https://raw.githubusercontent.com/omkar1872/TestCase-Studio/main/test_image_1.png" alt="TestCase Studio Screenshot" width="95%"> </p>
-
-## 📌 Project Overview
-
-**TestCase Studio** helps QA engineers, developers, and product teams quickly convert software requirements into **well-formatted test cases**.  
-
-Manually writing test cases takes time. This tool automates most of that effort using an LLM — helping teams improve productivity and standardize testing documentation.
-
-You can upload a requirement document (TXT, PDF, DOCX) or paste text, select how many test cases you want, and instantly get **professionally structured test cases**.
+> **AI-powered tool that converts requirement documents into clean, structured software test cases.**  
+> Built with **Streamlit** + **Groq LLM** for fast, consistent test-case generation.
 
 ---
 
-## 🚀 Features
-
-- 📄 **Supports multiple inputs**  
-  - Upload TXT, PDF, or DOCX files  
-  - Paste text manually  
-
-- 🧠 **AI-generated clean test cases** including:  
-  - Test Case ID  
-  - Title  
-  - Preconditions  
-  - Steps  
-  - Expected Results  
-
-- 🎨 **Modern UI** using Streamlit with custom theme  
-- 📥 **Download results as TXT**  
-- 🔍 Expandable viewer for generated test cases  
-- 🖥️ Works on both local machine & Hugging Face Spaces  
+<p align="center">
+  <img src="https://raw.githubusercontent.com/omkar1872/TestCase-Studio/main/test_image_1.png" alt="TestCase Studio Screenshot" width="95%">
+</p>
 
 ---
 
-## 🛠️ Technologies Used
+## 🔎 Project Overview
 
-| Technology | Purpose |
-|-----------|---------|
-| **Python** | Core logic |
-| **Streamlit** | Frontend & UI |
-| **Groq LLM** | Test case generation |
-| **docx2txt** | Read DOCX files |
-| **PyPDF2** | Read PDF files |
-| **dotenv / os** | Environment variable management |
+**TestCase Studio** automates the creation of software test cases from written requirements. It reduces manual effort for QA engineers and developers by using a Large Language Model (Groq LLM) to interpret requirement text (from TXT, PDF, DOCX or pasted text) and produce well-structured test cases consisting of:
+
+- **ID** (unique identifier)  
+- **Title** (short descriptive name)  
+- **Preconditions** (setup prior to execution)  
+- **Steps** (clear, reproducible steps)  
+- **Expected Result** (the outcome to validate)
+
+**Why this matters:** Writing test cases manually is repetitive, time-consuming and inconsistent across teams. This tool standardizes and accelerates test-case generation saving time and improving coverage.
 
 ---
-## Output
-<p align="center"> <img src="https://raw.githubusercontent.com/omkar1872/TestCase-Studio/main/test_image_2.png" alt="TestCase Studio Screenshot" width="95%"> </p>
-<p align="center"> <img src="https://raw.githubusercontent.com/omkar1872/TestCase-Studio/main/test_image_3.png" alt="TestCase Studio Screenshot" width="95%"> </p>
-<p align="center"> <img src="https://raw.githubusercontent.com/omkar1872/TestCase-Studio/main/test_image_4.png" alt="TestCase Studio Screenshot" width="95%"> </p>
-<p align="center"> <img src="https://raw.githubusercontent.com/omkar1872/TestCase-Studio/main/test_image_5.png" alt="TestCase Studio Screenshot" width="95%"> </p>
+
+## ⚙️ Key Features
+
+- Upload requirement files (TXT, PDF, DOCX) or paste requirement text.
+- Generate multiple test cases in one click.
+- Clean, copy-ready output with separators and clear fields.
+- Download results as a `.txt` file for documentation or importing into test management tools.
+- Lightweight Streamlit UI, easily deployable to Hugging Face Spaces or any cloud host.
+
+---
+
+## 🧰 Tools & Libraries — Detailed Explanation
+
+### **Python**
+The core language used for logic, file handling, and integration with external APIs.
+
+### **Streamlit**
+- Purpose: Rapidly build interactive web apps with Python.
+- Why used: Minimal boilerplate, instant UI updates, great for demos and internal tools.
+- Key parts used: `st.file_uploader`, `st.text_area`, `st.download_button`, `st.markdown`, `st.code`.
+
+### **Groq (LLM)**
+- Purpose: Generate natural-language test cases from requirements.
+- Why used: LLMs can understand intent and reformat requirements into structured test cases quickly.
+- Integration: The app sends a prompt + requirements to Groq and parses the text response for display/download.
+
+### **PyPDF2**
+- Purpose: Extract plain text from PDF files.
+- Why used: Many requirements are archived as PDFs; PyPDF2 allows reading and extracting text on the server.
+
+### **docx2txt**
+- Purpose: Extract plain text from Microsoft Word `.docx`.
+- Why used: Many stakeholders provide requirements in Word docs. `docx2txt` reads these reliably.
+
+### **python-dotenv (optional)**
+- Purpose: Load environment variables from `.env` during local development.
+- Security note: Do not commit `.env` to GitHub. Use GitHub Secrets / Hugging Face Secrets for deployments.
+
+### **GitHub & Git**
+- Purpose: Version control and remote repository hosting.
+- Why used: Share code with recruiters and collaborators; show professional workflow.
+
+### **Hugging Face Spaces (optional platform)**
+- Purpose: Deploy Streamlit apps as public web demos.
+- Why used: Simple, fast deployment for Streamlit; supports secrets for API keys (recommended).
 
 ---
 
@@ -109,15 +126,23 @@ TestCase-Studio/
 
 ---
 
-## Screenshots
-
-![App Screenshot](screenshot.png) *(Add screenshot if desired)*
-
----
-
+## Output Images
+<p align="center">
+  <img src="https://raw.githubusercontent.com/omkar1872/TestCase-Studio/main/test_image_2.png" alt="TestCase Studio Screenshot" width="95%">
+</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/omkar1872/TestCase-Studio/main/test_image_3.png" alt="TestCase Studio Screenshot" width="95%">
+</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/omkar1872/TestCase-Studio/main/test_image_4.png" alt="TestCase Studio Screenshot" width="95%">
+</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/omkar1872/TestCase-Studio/main/test_image_5.png" alt="TestCase Studio Screenshot" width="95%">
+</p>
 ## License
 
 This project is licensed under the **MIT License**.
+
 
 
 
