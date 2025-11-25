@@ -3,6 +3,7 @@
 A Streamlit-based AI tool that automatically generates clean, structured software test cases from requirement documents using **Groq LLM**.
 
 ---
+<p align="center"> <img src="https://raw.githubusercontent.com/omkar1872/TestCase-Studio/main/test_image_1.png" alt="TestCase Studio Screenshot" width="95%"> </p>
 
 ## 📌 Project Overview
 
@@ -112,4 +113,5 @@ TestCase-Studio/
 ## License
 
 This project is licensed under the **MIT License**.
+
 
