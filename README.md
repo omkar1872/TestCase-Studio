@@ -1,27 +1,51 @@
 # 🧪 TestCase Studio
 
-Streamlit app to generate clean software test cases from requirements using Groq LLM.
+A Streamlit-based AI tool that automatically generates clean, structured software test cases from requirement documents using **Groq LLM**.
 
 ---
 
-## Project Overview
+## 📌 Project Overview
 
-**TestCase Studio** helps QA engineers and developers generate detailed and clean test cases from requirement documents. Users can either **upload a TXT, PDF, or DOCX file** or **paste requirement text** directly into the app. The app leverages Groq LLM to generate structured test cases with a clean, readable format.
+**TestCase Studio** helps QA engineers, developers, and product teams quickly convert software requirements into **well-formatted test cases**.  
+
+Manually writing test cases takes time. This tool automates most of that effort using an LLM — helping teams improve productivity and standardize testing documentation.
+
+You can upload a requirement document (TXT, PDF, DOCX) or paste text, select how many test cases you want, and instantly get **professionally structured test cases**.
 
 ---
 
-## Features
+## 🚀 Features
 
-- Upload requirement file (TXT, PDF, DOCX) or paste text directly.
-- Generate detailed test cases with:
-  - ID
-  - Title
-  - Preconditions
-  - Steps
-  - Expected Results
-- Clean output format with separators for each test case.
-- Download generated test cases as TXT.
-- Modern Streamlit UI with a clean theme.
+- 📄 **Supports multiple inputs**  
+  - Upload TXT, PDF, or DOCX files  
+  - Paste text manually  
+
+- 🧠 **AI-generated clean test cases** including:  
+  - Test Case ID  
+  - Title  
+  - Preconditions  
+  - Steps  
+  - Expected Results  
+
+- 🎨 **Modern UI** using Streamlit with custom theme  
+- 📥 **Download results as TXT**  
+- 🔍 Expandable viewer for generated test cases  
+- 🖥️ Works on both local machine & Hugging Face Spaces  
+
+---
+
+## 🛠️ Technologies Used
+
+| Technology | Purpose |
+|-----------|---------|
+| **Python** | Core logic |
+| **Streamlit** | Frontend & UI |
+| **Groq LLM** | Test case generation |
+| **docx2txt** | Read DOCX files |
+| **PyPDF2** | Read PDF files |
+| **dotenv / os** | Environment variable management |
+
+---
 
 ---
 
@@ -88,3 +112,4 @@ TestCase-Studio/
 ## License
 
 This project is licensed under the **MIT License**.
+
