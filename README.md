@@ -47,6 +47,11 @@ You can upload a requirement document (TXT, PDF, DOCX) or paste text, select how
 | **dotenv / os** | Environment variable management |
 
 ---
+## Output
+<p align="center"> <img src="https://raw.githubusercontent.com/omkar1872/TestCase-Studio/main/test_image_2.png" alt="TestCase Studio Screenshot" width="95%"> </p>
+<p align="center"> <img src="https://raw.githubusercontent.com/omkar1872/TestCase-Studio/main/test_image_3.png" alt="TestCase Studio Screenshot" width="95%"> </p>
+<p align="center"> <img src="https://raw.githubusercontent.com/omkar1872/TestCase-Studio/main/test_image_4.png" alt="TestCase Studio Screenshot" width="95%"> </p>
+<p align="center"> <img src="https://raw.githubusercontent.com/omkar1872/TestCase-Studio/main/test_image_5.png" alt="TestCase Studio Screenshot" width="95%"> </p>
 
 ---
 
@@ -113,5 +118,6 @@ TestCase-Studio/
 ## License
 
 This project is licensed under the **MIT License**.
+
 
 
